@@ -35,6 +35,8 @@ public class MainActivity extends ActionBarActivity {
         setContentView(R.layout.activity_main);
         ViewGroup activityContainer = (ViewGroup) findViewById(R.id.activity_main_container);
 
+        getWindow().setBackgroundDrawable(null);
+
         addButton(ChatumLatinumActivity.class,
                 getString(R.string.title_activity_chatum_latinum), activityContainer);
     }
